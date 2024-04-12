@@ -1,11 +1,3 @@
-<?php
-
-
-
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,12 +10,16 @@
 
 <body>
     <div class="container my-5">
-        <form>
+        <form action="output.php" method="post">
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Ricevo GET</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="exampleInputText" class="form-label">Invio paragrafo</label>
+                <input name="paragrafo" type="text" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mb-3">
+                <label for="exampleInputText" class="form-label">Invio parola da censurare</label>
+                <input name="parola" type="text" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Invio</button>
         </form>
     </div>
 

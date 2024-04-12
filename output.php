@@ -1,7 +1,9 @@
 <?php
 
+$paragrafo = $_POST["paragrafo"];
+$parola = $_POST["parola"];
 
-
+$censurata = str_replace($parola, '***', $paragrafo);
 
 ?>
 
@@ -17,7 +19,19 @@
 
 <body>
     <div class="container my-5">
-        <h1></h1>
+        <h1> Paragrafo: <?php echo $paragrafo ?> </h1>
+    </div>
+    <div class="container my-5">
+        <h1> Parola: <?php echo $parola ?></h1>
+    </div>
+    <div class="container my-5">
+        <h1> Paragrafo censurato: <?php echo $censurata ?></h1>
+    </div>
+    <div class="container my-5">
+        <h1> Il paragrafo ha una lunghezza di: <?php echo strlen($paragrafo) ?></h1>
+    </div>
+    <div class="container my-5">
+        <h1> Il paragrafo censurato ha una lunghezza di: <?php echo strlen($censurata) ?></h1>
     </div>
 </body>
 
